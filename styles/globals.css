@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-nexora-primary text-slate-100;
+}
+
+.dark body {
+  @apply bg-nexora-primary text-slate-100;
+}
+
+.light {
+  @apply bg-slate-50 text-slate-900;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-nexora-accent to-blue-500 bg-clip-text text-transparent;
+}
+
+.card-glass {
+  @apply rounded-xl bg-nexora-secondary/50 backdrop-blur-md border border-slate-700/30;
+}
+
+.button-primary {
+  @apply px-4 py-2 rounded-lg bg-nexora-accent text-nexora-primary font-semibold hover:bg-opacity-90 transition-all;
+}
+
+.button-secondary {
+  @apply px-4 py-2 rounded-lg bg-nexora-secondary border border-slate-700 text-slate-100 hover:bg-nexora-secondary/80 transition-all;
+}
